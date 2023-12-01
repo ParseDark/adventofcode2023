@@ -26,7 +26,7 @@ const strMapnumber = {
 
 const transform = (s) => {
     // todo: match logic has some issue.
-    // todo: in here we need to consider the order of replace logic.
+    // todo: in here we need to consider the direction of replace logic.
     const newStr = s.toLowerCase().replace(/(one|two|three|four|five|six|seven|eight|nine)/ig, (matchStr) => {
         return strMapnumber[matchStr]
     })
